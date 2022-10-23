@@ -1,4 +1,4 @@
-namespace SwoleTrack.Pages;
+namespace SwoleTrack;
 
 public partial class SettingsPage : ContentPage
 {
