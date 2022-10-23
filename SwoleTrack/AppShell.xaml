@@ -7,12 +7,12 @@
     Shell.FlyoutBehavior="Disabled">
 
 
-    <TabBar>
+    <!--<TabBar>
         <Tab Title="Home">
             <ShellContent ContentTemplate="{DataTemplate local:}"
                           Route="Pages/HomePage"/>
         </Tab>
-    </TabBar>
+    </TabBar>-->
  
 
 

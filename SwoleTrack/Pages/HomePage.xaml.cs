@@ -1,4 +1,4 @@
-namespace SwoleTrack;
+namespace SwoleTrack.Pages;
 
 public partial class HomePage : ContentPage
 {
