@@ -49,7 +49,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0-preview1" />
+	  <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Calculator.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Nutrition.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="SettingsPage.xaml">

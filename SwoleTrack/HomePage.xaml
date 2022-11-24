@@ -2,11 +2,111 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SwoleTrack.HomePage"
+             
              Title="HomePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+   
+    <FlexLayout Direction="Column">
+
+        <!-- Header -->
+        <Label Text="Welcome To The Start Of Your Lifting Journey"
+               FontSize="18"
+               BackgroundColor="Black"
+               HorizontalTextAlignment="Center" />
+
+        <!-- Body -->
+        <FlexLayout FlexLayout.Grow="1"
+                   Direction="Column"
+                    JustifyContent="SpaceBetween">
+
+            <!-- Content -->
+            <Label Text="CONTENT"
+                   FontSize="18"
+                   BackgroundColor="Black"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FlexLayout.Grow="1" />
+
+
+            <!-- This Creates the youtube button that the the user can click, It should be on the left side of the screen all in Navigation Boxview. When Click it send the user to 
+            the Swole Track Youtube Home Page-->
+         
+            <!--Tittle to Social-->
+            
+            <Label Text="Socials"
+               FontSize="18"
+               FlexLayout.Basis="Auto"
+               FlexLayout.Order="-10"
+          />
+            <!--Youtube Button-->
+            <Border FlexLayout.Basis="70"
+                     FlexLayout.Order="-10"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    Stroke="Blue"
+                    StrokeThickness="2"
+                    StrokeShape="RoundRectangle 50"
+                >
+                <ImageButton 
+                         Source="dotnet_bot.svg"
+                         x:Name="Youtube_Button"
+                         HeightRequest="60"
+                         WidthRequest="60"
+                         Clicked="Youtube_Button_Clicked"
+                >
+                </ImageButton>
+            </Border>
+            <!--Instagram Button-->
+            <Border FlexLayout.Basis="80"
+                     FlexLayout.Order="-10"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    Stroke="Blue"
+                    StrokeThickness="2"
+                    StrokeShape="RoundRectangle 50"
+                >
+                <ImageButton 
+                    Source="dotnet_bot.svg"
+                         x:Name="Insta_Button"
+                         HeightRequest="60"
+                         WidthRequest="60"
+                         Clicked="Insta_Button_Clicked"
+                >
+                </ImageButton>
+            </Border>
+            <!--Twitter-->
+            <Border FlexLayout.Basis="85"
+                     FlexLayout.Order="-10"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    Stroke="Blue"
+                    StrokeThickness="2"
+                    StrokeShape="RoundRectangle 50"
+                >
+                <ImageButton 
+                    Source="dotnet_bot.svg"
+                         x:Name="Twitter"
+                         HeightRequest="60"
+                         WidthRequest="60"
+                         Clicked="Twitter_Button_Clicked"
+                >
+                </ImageButton>
+            </Border>
+           
+
+            <BoxView FlexLayout.Basis="50"
+                     Color="Black" />
+
+
+        </FlexLayout>
+
+        <!-- This is the bottom of the page, was thinking of adding a lists of quotes to add a variety of informational quotes. -->
+        <Label x:Name="Qoute"
+               Text=""
+               FontSize="18"
+               BackgroundColor="Blue"
+               HorizontalTextAlignment="Center" />
+        
+    </FlexLayout>
+    
 </ContentPage>
+    

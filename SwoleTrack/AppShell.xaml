@@ -8,7 +8,7 @@
 
 
     <TabBar x:Name ="PhoneTabs">
-        <Tab Title="Home">
+        <Tab Title="Home" >
             <ShellContent ContentTemplate="{DataTemplate local:HomePage}"
                           Route="HomePage"/>
         </Tab>
@@ -19,8 +19,16 @@
         </Tab>
 
 
-        <Tab Title="Settings">
+        <Tab Title="Settings" Icon="">
             <ShellContent ContentTemplate="{DataTemplate local:SettingsPage}"
+                          Route="SettingsPage"/>
+        </Tab>
+        <Tab Title="Nutrition" Icon="">
+            <ShellContent ContentTemplate="{DataTemplate local:Nutrition}"
+                          Route="SettingsPage"/>
+        </Tab>
+        <Tab Title="Calculator" Icon="">
+            <ShellContent ContentTemplate="{DataTemplate local:Calculator}"
                           Route="SettingsPage"/>
         </Tab>
     </TabBar>
