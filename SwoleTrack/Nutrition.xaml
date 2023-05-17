@@ -3,10 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SwoleTrack.Nutrition"
              Title="Nutrition">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <StackLayout Margin="20">
+        <Frame BorderColor="Black"
+               Padding="5">
+            <StackLayout Orientation="Horizontal"
+                         Spacing="15">
+                <BoxView Color="Red"
+                         WidthRequest="40" />
+                <Label Text="Creatine Monohydrate"
+                       FontSize="18"
+                       VerticalOptions="Center" />
+            </StackLayout>
+        </Frame>
+        <Frame BorderColor="Black"
+               Padding="5">
+            <StackLayout Orientation="Horizontal"
+                         Spacing="15">
+                <BoxView Color="Yellow"
+                         WidthRequest="40" />
+                <Label Text="Protein Powder"
+                       FontSize="18"
+                       VerticalOptions="Center" />
+            </StackLayout>
+        </Frame>
+        <Frame BorderColor="Black"
+               Padding="5">
+            <StackLayout Orientation="Horizontal"
+                         Spacing="15">
+                <BoxView Color="Blue"
+                         WidthRequest="40" />
+                <Label Text="BCAA (Branched Chain Amino Acid)"
+                       FontSize="18"
+                       VerticalOptions="Center" />
+            </StackLayout>
+        </Frame>
+        
+    </StackLayout>
+    
+
+  
 </ContentPage>

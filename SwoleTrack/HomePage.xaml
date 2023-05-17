@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SwoleTrack.HomePage"
-             
+             BackgroundColor="{StaticResource WindowBackgroundColor}"
              Title="HomePage">
    
     <FlexLayout Direction="Column">
@@ -10,7 +10,7 @@
         <!-- Header -->
         <Label Text="Welcome To The Start Of Your Lifting Journey"
                FontSize="18"
-               BackgroundColor="Black"
+               BackgroundColor="{StaticResource Header}"
                HorizontalTextAlignment="Center" />
 
         <!-- Body -->
@@ -21,7 +21,7 @@
             <!-- Content -->
             <Label Text="CONTENT"
                    FontSize="18"
-                   BackgroundColor="Black"
+                   BackgroundColor="{StaticResource WindowBackgroundColor}"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    FlexLayout.Grow="1" />
@@ -29,9 +29,10 @@
 
             <!-- This Creates the youtube button that the the user can click, It should be on the left side of the screen all in Navigation Boxview. When Click it send the user to 
             the Swole Track Youtube Home Page-->
-         
+
+          
             <!--Tittle to Social-->
-            
+
             <Label Text="Socials"
                FontSize="18"
                FlexLayout.Basis="Auto"
@@ -91,10 +92,11 @@
                 >
                 </ImageButton>
             </Border>
-           
+              
 
-            <BoxView FlexLayout.Basis="50"
-                     Color="Black" />
+
+                <BoxView FlexLayout.Basis="50"
+                     Color="{StaticResource Header}" />
 
 
         </FlexLayout>
